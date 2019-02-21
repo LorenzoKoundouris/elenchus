@@ -1,0 +1,21 @@
+{
+  "name": "elenchus",
+  "version": "1.0.0",
+  "description": "A collection of predicate functions to serve as lightweight utils",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LorenzoKoundouris/elenchus.git"
+  },
+  "author": "Lorenzo Koundouris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LorenzoKoundouris/elenchus/issues"
+  },
+  "homepage": "https://github.com/LorenzoKoundouris/elenchus#readme",
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  }
+}

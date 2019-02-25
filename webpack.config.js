@@ -1,14 +1,14 @@
-const path = require("path");
-
 module.exports = {
     entry: "./src/app",
     output: {
-        path: path.resolve(__dirname, "dist"),
+        library: "elenchus",
+        libraryTarget: "umd",
         filename: "elenchus.min.js",
     },
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".json"],
     },
+    target: "node",
     module: {
         rules: [
             {

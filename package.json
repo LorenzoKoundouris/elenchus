@@ -2,7 +2,7 @@
     "name": "elenchus",
     "version": "1.0.0",
     "description": "A collection of predicate functions to serve as lightweight utils",
-    "main": "app.ts",
+    "main": "dist/elenchus.min.js",
     "scripts": {
         "format:write": "prettier --write **/*.{css,html,md,json,js,jsx,ts,tsx}",
         "format:check": "prettier --c **/*.{css,html,md,json,js,jsx,ts,tsx}",

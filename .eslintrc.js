@@ -8,7 +8,8 @@ module.exports = {
     ],
     env: {
         node: true,
-        browser: true
+        jest: true,
+        es6: true,
     },
     rules: {
         "no-prototype-builtins": "off",
@@ -16,5 +17,6 @@ module.exports = {
         "import/no-default-export": "error",
         "react/destructuring-assignment": "off",
         "react/jsx-filename-extension": "off",
+        "import/no-unresolved": "off",
     },
 };

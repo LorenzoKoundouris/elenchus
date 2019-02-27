@@ -4,6 +4,7 @@
     "description": "A collection of predicate functions to serve as lightweight utils",
     "main": "dist/elenchus.min.js",
     "scripts": {
+        "build:test": "jest --coverage --env=node",
         "format:write": "prettier --write **/*.{css,html,md,json,js,jsx,ts,tsx}",
         "format:check": "prettier --c **/*.{css,html,md,json,js,jsx,ts,tsx}",
         "format:list": "prettier --l **/*.{css,html,md,json,js,jsx,ts,tsx}",
@@ -32,6 +33,7 @@
         "@babel/preset-typescript": "^7.1.0",
         "@typescript-eslint/eslint-plugin": "^1.4.0",
         "@typescript-eslint/parser": "^1.4.0",
+        "@types/jest": "^23.3.10",
         "babel-loader": "^8.0.4",
         "eslint": "^5.3.0",
         "eslint-config-airbnb": "^17.1.0",
@@ -42,7 +44,11 @@
         "eslint-plugin-react": "^7.12.4",
         "prettier": "^1.16.4",
         "typescript": "^3.2.2",
+        "ts-jest": "^23.10.5",
         "webpack": "^4.29.5",
         "webpack-cli": "^3.2.3"
+    },
+    "dependencies": {
+        "jest": "^23.6.0"
     }
 }

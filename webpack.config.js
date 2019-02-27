@@ -1,5 +1,5 @@
 module.exports = {
-    entry: "./src/app",
+    entry: "./src/main",
     output: {
         library: "elenchus",
         libraryTarget: "umd",

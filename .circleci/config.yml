@@ -23,7 +23,7 @@ jobs:
             - run: npm test
             - run:
                   name: Bump version
-                  command: /bin/bash /home/circleci/.deploy/repo/bump-version.sh
+                  command: /bin/bash /home/circleci/repo/.deploy/bump-version.sh
                   environment:
                       EMAIL_ADDR: $EMAIL_ADDR
             - run: npm run build

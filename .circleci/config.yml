@@ -6,14 +6,13 @@ defaults: &defaults
         - image: circleci/node:8.9.1
 
 jobs:
-    test:
+    build:
         <<: *defaults
         branches:
             only:
                 - master
         steps:
             - checkout
-
             - restore_cache:
                   keys:
                       - v1-dependencies-{{ checksum "package.json" }}
@@ -21,16 +20,13 @@ jobs:
                       - v1-dependencies-
 
             - run: npm install
-            - run:
-                  name: Run tests
-                  command: npm test
+            - run: npm test
             - run:
                   name: Bump version
-                  command: /bin/bash /home/circleci/repo/.deploy/npm-bump.sh
-                  environment: $EMAIL_ADDR
-            - run:
-                  name: Build
-                  command: npm run build
+                  command: /bin/bash /home/circleci/repo/bump-version.sh
+                  environment:
+                      EMAIL_ADDR: $EMAIL_ADDR
+            - run: npm run build
             - save_cache:
                   paths:
                       - node_modules
@@ -39,11 +35,6 @@ jobs:
             - persist_to_workspace:
                   root: ~/repo
                   paths: .
-    deploy:
-        <<: *defaults
-        steps:
-            - attach_workspace:
-                  at: ~/repo
             - run:
                   name: Authenticate with registry
                   command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc

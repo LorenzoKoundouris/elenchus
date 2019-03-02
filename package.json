@@ -19,6 +19,18 @@
         "url": "git+https://github.com/LorenzoKoundouris/elenchus.git"
     },
     "author": "Lorenzo Koundouris",
+    "keywords": [
+        "typescript",
+        "javascript",
+        "es6",
+        "webpack",
+        "babel",
+        "circleci",
+        "continuous integration",
+        "jest",
+        "eslint",
+        "prettier"
+    ],
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/LorenzoKoundouris/elenchus/issues"

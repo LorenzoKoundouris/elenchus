@@ -1,6 +1,6 @@
 {
     "name": "elenchus",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "A collection of predicate functions to serve as lightweight utils",
     "main": "dist/elenchus.min.js",
     "scripts": {

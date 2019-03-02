@@ -1,5 +1,43 @@
 # elenchus
 
-[![CircleCI](https://circleci.com/gh/LorenzoKoundouris/elenchus.svg?style=svg&circle-token=d436721f522d54cc383b3ad88b09a471ce615451)](https://circleci.com/gh/LorenzoKoundouris/elenchus)
+[![CircleCI](https://circleci.com/gh/LorenzoKoundouris/elenchus/tree/master.svg?style=svg)](https://circleci.com/gh/LorenzoKoundouris/elenchus/tree/master) ![minified size](https://badgen.net/bundlephobia/min/elenchus) ![minified size](https://badgen.net/bundlephobia/minzip/elenchus) [![dependencies Status](https://david-dm.org/LorenzoKoundouris/elenchus/status.svg)](https://david-dm.org/LorenzoKoundouris/elenchus) [![devDependencies Status](https://david-dm.org/LorenzoKoundouris/elenchus/dev-status.svg)](https://david-dm.org/LorenzoKoundouris/elenchus?type=dev)
 
-A collection of predicate functions to serve as lightweight utils
+> “There is only one good, knowledge, and one evil, ignorance.”
+
+_Named after the Socratic method of hypothesis elimination, where a series of questions formulated as tests of logic and fact intended to help discover general characteristics of particular instances._ [More](https://en.wikipedia.org/wiki/Socratic_method)
+
+---
+
+## Description
+
+A collection of predicate functions to serve as lightweight utils.
+
+## Installation
+
+Using npm:
+
+```shell
+$ npm install elenchus
+```
+
+Using yarn:
+
+```shell
+$ yarn add elenchus
+```
+
+## Usage
+
+```javascript
+const elenchus = require("elenchus");
+elenchus.isNullOrUndefined("I know that I know nothing");
+// => false
+```
+
+### Individual methods
+
+```javascript
+const isNullOrUndefined = require("elenchus").isNullOrUndefined;
+isNullOrUndefined("The unexamined life is not worth living");
+// => false
+```

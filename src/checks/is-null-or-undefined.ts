@@ -1,3 +1,3 @@
-export function isNullOrUndefined(param: any): boolean {
-    return typeof param === "undefined" || param === null;
+export function isNullOrUndefined(valueToCheck: any): boolean {
+    return typeof valueToCheck === "undefined" || valueToCheck === null;
 }

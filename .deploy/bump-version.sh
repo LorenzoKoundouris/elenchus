@@ -2,7 +2,7 @@
 
 # Description: bump version only if the previous master version was the same (not manually modified)
 # Requirements: The local package.json must have an upper property "url" setted with the git url of the project
-git config --global user.email "bihlis91@gmail.com" && git config --global user.name "SlaveGit" && git config --global push.default simple
+git config --global user.email "$EMAIL_ADDR" && git config --global user.name "$GIT_USR" && git config --global push.default simple
 
 git fetch
 git checkout HEAD~1

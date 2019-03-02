@@ -24,6 +24,9 @@ jobs:
             - run:
                   name: Bump version
                   command: /bin/bash /home/circleci/repo/.deploy/bump-version.sh
+                  environment:
+                      EMAIL_ADDR: $EMAIL_ADDR
+                      GIT_USR: $GIT_USR
             - run: npm run build
             - save_cache:
                   paths:

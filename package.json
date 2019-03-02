@@ -4,7 +4,7 @@
     "description": "A collection of predicate functions to serve as lightweight utils",
     "main": "dist/elenchus.min.js",
     "scripts": {
-        "build:test": "jest --coverage --env=node",
+        "test": "jest --coverage --env=node",
         "format:write": "prettier --write **/*.{css,html,md,json,js,jsx,ts,tsx}",
         "format:check": "prettier --c **/*.{css,html,md,json,js,jsx,ts,tsx}",
         "format:list": "prettier --l **/*.{css,html,md,json,js,jsx,ts,tsx}",

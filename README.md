@@ -41,3 +41,11 @@ const isNullOrUndefined = require("elenchus").isNullOrUndefined;
 isNullOrUndefined("The unexamined life is not worth living");
 // => false
 ```
+
+## Methods
+
+| Method                                     | Description            |
+| ------------------------------------------ | ---------------------- |
+| `isArrayAndNotEmpty(param: any): boolean`  | Checks type and length |
+| `isNullOrUndefined(param: any): boolean`   | Checks type            |
+| `isStringAndNotEmpty(param: any): boolean` | Checks type and value  |

@@ -34,7 +34,7 @@ elenchus.isNullOrUndefined("I know that I know nothing");
 // => false
 ```
 
-### Individual methods
+### Individual methods
 
 ```javascript
 const isNullOrUndefined = require("elenchus").isNullOrUndefined;
